@@ -31,15 +31,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grpc", "Grpc", "{B91EE3DE-4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseHandlerApp.Sample", "BaseHandlerApp.Sample\BaseHandlerApp.Sample.csproj", "{070ECEE0-9931-4328-B569-5D9C703DB316}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Service", "Grpc.Service\Grpc.Service.csproj", "{6635FB4A-EE49-4B82-BECC-0719512D1016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grpc.Service", "Grpc.Service\Grpc.Service.csproj", "{6635FB4A-EE49-4B82-BECC-0719512D1016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Client", "Grpc.Client\Grpc.Client.csproj", "{402FA1AB-6D58-4225-B72A-DE8189024C01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grpc.Client", "Grpc.Client\Grpc.Client.csproj", "{402FA1AB-6D58-4225-B72A-DE8189024C01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQ.Common", "EasyNetQ.Common\EasyNetQ.Common.csproj", "{F3CF926F-1722-4D72-AF6D-348379FCDBD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQ.Common", "EasyNetQ.Common\EasyNetQ.Common.csproj", "{F3CF926F-1722-4D72-AF6D-348379FCDBD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQ.Client", "EasyNetQ.Client\EasyNetQ.Client.csproj", "{834996DD-D954-4577-B652-35FE6ABBA935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQ.Client", "EasyNetQ.Client\EasyNetQ.Client.csproj", "{834996DD-D954-4577-B652-35FE6ABBA935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQ.Send", "EasyNetQ.Send\EasyNetQ.Send.csproj", "{46AB6DF7-9795-4AE2-B327-BBDA7542B307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQ.Send", "EasyNetQ.Send\EasyNetQ.Send.csproj", "{46AB6DF7-9795-4AE2-B327-BBDA7542B307}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Receive", "RabbitMQ.Receive\RabbitMQ.Receive.csproj", "{4AD51414-25AA-41F0-8681-A2BE2D33DF2D}"
 EndProject
@@ -48,6 +48,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.RPC.Client", "RabbitMQ.RPC.Client\RabbitMQ.RPC.Client.csproj", "{2445C0A0-4222-44BF-BDBE-B949F1153C17}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.RPC.Server", "RabbitMQ.RPC.Send\RabbitMQ.RPC.Server.csproj", "{503A4D57-9155-4717-9AE7-AAF50C076FCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RarOrZipApp.Sample", "RarOrZipApp.Sample\RarOrZipApp.Sample.csproj", "{A5423B7C-5A8A-442F-838E-53D0F655B7A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{503A4D57-9155-4717-9AE7-AAF50C076FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{503A4D57-9155-4717-9AE7-AAF50C076FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{503A4D57-9155-4717-9AE7-AAF50C076FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5423B7C-5A8A-442F-838E-53D0F655B7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5423B7C-5A8A-442F-838E-53D0F655B7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5423B7C-5A8A-442F-838E-53D0F655B7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5423B7C-5A8A-442F-838E-53D0F655B7A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
