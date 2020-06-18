@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangfireApp.Sample", "Hangf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{1C1058A8-E39E-4114-8129-DD0E16D0DB80}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grpc", "Grpc", "{B91EE3DE-4DD2-4382-92F2-61290E705C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseHandlerApp.Sample", "BaseHandlerApp.Sample\BaseHandlerApp.Sample.csproj", "{070ECEE0-9931-4328-B569-5D9C703DB316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{FE3D976D-B8A5-4DAA-A0C6-DD2D1887DEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE3D976D-B8A5-4DAA-A0C6-DD2D1887DEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE3D976D-B8A5-4DAA-A0C6-DD2D1887DEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070ECEE0-9931-4328-B569-5D9C703DB316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070ECEE0-9931-4328-B569-5D9C703DB316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070ECEE0-9931-4328-B569-5D9C703DB316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070ECEE0-9931-4328-B569-5D9C703DB316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
