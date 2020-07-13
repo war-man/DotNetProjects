@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Redis", "Redis", "{E007224E-5025-424A-8CA7-487A48525319}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NoSQL", "NoSQL", "{E007224E-5025-424A-8CA7-487A48525319}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisApp.Sample", "RedisApp.Sample\RedisApp.Sample.csproj", "{27874377-0F68-4A55-BB8D-11AB3F065F96}"
 EndProject
@@ -60,6 +60,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "EventBus\EventBus.csproj", "{91B44572-9B1B-4A0F-AB64-292A92933CF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Test", "EventBus.Test\EventBus.Test.csproj", "{5C8B7C03-BF05-48B9-B8B6-D40F9C13E330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemcachedApp.Sample", "MemcachedApp.Sample\MemcachedApp.Sample.csproj", "{9A4AF843-B1BE-4667-8480-1200CCD4CD86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +157,10 @@ Global
 		{5C8B7C03-BF05-48B9-B8B6-D40F9C13E330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C8B7C03-BF05-48B9-B8B6-D40F9C13E330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C8B7C03-BF05-48B9-B8B6-D40F9C13E330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4AF843-B1BE-4667-8480-1200CCD4CD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4AF843-B1BE-4667-8480-1200CCD4CD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4AF843-B1BE-4667-8480-1200CCD4CD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4AF843-B1BE-4667-8480-1200CCD4CD86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,6 +184,7 @@ Global
 		{526A528E-6C9F-4D75-A8DD-5410F1D4FDA7} = {F67A09D4-35CA-4BAB-ADBB-F7D04DD476E5}
 		{91B44572-9B1B-4A0F-AB64-292A92933CF3} = {F67A09D4-35CA-4BAB-ADBB-F7D04DD476E5}
 		{5C8B7C03-BF05-48B9-B8B6-D40F9C13E330} = {F67A09D4-35CA-4BAB-ADBB-F7D04DD476E5}
+		{9A4AF843-B1BE-4667-8480-1200CCD4CD86} = {E007224E-5025-424A-8CA7-487A48525319}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9098F81-4915-4790-BCBA-40BD980D8963}
