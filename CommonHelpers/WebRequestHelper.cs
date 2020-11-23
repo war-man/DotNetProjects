@@ -8,6 +8,7 @@ using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO.Compression;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CommonHelpers
 {
@@ -25,9 +26,21 @@ namespace CommonHelpers
         public string HttpGet(string url, Dictionary<string, string> headerDic = null)
         {
             string result = string.Empty;
+            HttpWebRequest wbRequest = null;
             try
             {
-                HttpWebRequest wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                //如果是发送HTTPS请求
+                if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+                {
+                    ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Ssl3;
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                    wbRequest.ProtocolVersion = HttpVersion.Version10;
+                }
+                else
+                {
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                }
                 wbRequest.Method = "GET";
                 if (headerDic != null && headerDic.Count > 0)
                 {
@@ -68,9 +81,21 @@ namespace CommonHelpers
         public string HttpPost(string url, string paramData, Dictionary<string, string> headerDic = null)
         {
             string result = string.Empty;
+            HttpWebRequest wbRequest = null;
             try
             {
-                HttpWebRequest wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                //如果是发送HTTPS请求
+                if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+                {
+                    ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Ssl3;
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                    wbRequest.ProtocolVersion = HttpVersion.Version10;
+                }
+                else
+                {
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                }
                 wbRequest.Method = "POST";
                 wbRequest.ContentType = "application/x-www-form-urlencoded";
                 wbRequest.ContentLength = Encoding.UTF8.GetByteCount(paramData);
@@ -117,9 +142,21 @@ namespace CommonHelpers
         public string Http(string url, string paramData, Dictionary<string, string> headerDic = null, EMethod method = EMethod.Post, EContentType contentType = EContentType.Form)
         {
             string result = string.Empty;
+            HttpWebRequest wbRequest = null;
             try
             {
-                HttpWebRequest wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                //如果是发送HTTPS请求
+                if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+                {
+                    ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(CheckValidationResult);
+                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Ssl3;
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                    wbRequest.ProtocolVersion = HttpVersion.Version10;
+                }
+                else
+                {
+                    wbRequest = (HttpWebRequest)WebRequest.Create(url);
+                }
                 wbRequest.Method = method.GetDescription();
                 wbRequest.ContentType = contentType.GetDescription();
                 wbRequest.ContentLength = Encoding.UTF8.GetByteCount(paramData);
@@ -152,6 +189,11 @@ namespace CommonHelpers
             }
 
             return result;
+        }
+
+        private static bool CheckValidationResult(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors errors)
+        {
+            return true; //总是接受
         }
     }
     public enum EContentType
