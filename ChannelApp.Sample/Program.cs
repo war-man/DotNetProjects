@@ -6,6 +6,11 @@ namespace ChannelApp.Sample
 {
     class Program
     {
+        /*
+         * 参考：
+         * https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels
+         * https://dotnetcoretutorials.com/2020/11/24/using-channels-in-net-core-part-1-getting-started
+         */
         static async Task Main(string[] args)
         {
             Console.WriteLine("Which sample do you want to run?");
