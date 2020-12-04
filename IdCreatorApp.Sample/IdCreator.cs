@@ -26,7 +26,7 @@ namespace IdCreatorApp.Sample
         private long index = 0;//索引/计数器
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="instanceID">实例编号(0-1023)</param>
         /// <param name="indexBitLength">索引可用位数(1-32).每秒可生成ID数等于2的indexBitLength次方.大并发情况下,当前秒内ID数达到最大值时,将使用下一秒的时间戳,不影响获取ID.</param>
@@ -146,10 +146,10 @@ namespace IdCreatorApp.Sample
             }
         }
 
-        /// <summary> 
-        /// 获取时间戳 
-        /// </summary> 
-        /// <returns></returns> 
+        /// <summary>
+        /// 获取时间戳
+        /// </summary>
+        /// <returns></returns>
         public static long GetTimeStamp()
         {
             TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
