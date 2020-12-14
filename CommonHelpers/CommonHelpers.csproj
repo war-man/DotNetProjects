@@ -63,6 +63,7 @@
     <Compile Include="HashEncode.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="JsonHelper.cs" />
+    <Compile Include="LogHelper.cs" />
     <Compile Include="MailHelper.cs" />
     <Compile Include="PredicateBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
